@@ -1,3 +1,4 @@
+import { CompileShallowModuleMetadata } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { PolizaModel } from 'src/app/models/poliza.model';
@@ -8,7 +9,7 @@ import { PolizaModel } from 'src/app/models/poliza.model';
   styleUrls: ['./poliza.component.css']
 })
 export class PolizaComponent implements OnInit {
-  poliza = new PolizaModel();
+  poliza: PolizaModel = new PolizaModel();
 
   constructor() { }
 
@@ -16,7 +17,8 @@ export class PolizaComponent implements OnInit {
   }
 
   guardar(form: NgForm) {
-    console.log(form)
+    console.log(form);
+    console.log(this.poliza);
   }
 
 }

@@ -1,5 +1,5 @@
 export class PolizaModel {
-    poliza: string = "";
+    polizaid: string = "";
     cliente: string = "";
     producto: string = "";
     bien: string = "";
