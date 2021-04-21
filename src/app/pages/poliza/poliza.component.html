@@ -1,0 +1,109 @@
+<h1>Poliza <small>Producto contratado</small></h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-danger" routerLink="/polizas">
+                <i class="fa fa-arrow-left"></i> Regresar
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="row animated fadeIn">
+    <div class="col">
+
+    </div>
+</div>
+
+<form (ngSubmit)="guardar(f)" #f="ngForm">
+
+    <div>
+
+        <div class="form-group row">
+            <label class="col-3 col-form-label">#poliza</label>
+            <div class="col">
+
+                <input class="form-control" type="text" placeholder="Numero de poliza" formControlName="nombre">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group row">
+            <label class="col-3 col-form-label">Cliente</label>
+            <div class="col">
+
+                <input class="form-control" type="text" placeholder="Nombre del cliente">
+
+            </div>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="form-group row">
+        <label class="col-3 col-form-label">Producto contratado</label>
+        <div class="col">
+
+            <input class="form-control" type="text" placeholder="Producto">
+
+
+        </div>
+    </div>
+    <br>
+    <div class=" form-group row">
+        <label class="col-3 col-form-label">Bien asegurado</label>
+        <div class="col">
+
+            <input class="form-control" type="text" placeholder="Bien asegurado" formControlName="pass2">
+
+
+        </div>
+    </div>
+    <br>
+    <div class="form-group row">
+        <label class="col-3 col-form-label">fecha de pago</label>
+        <div class="col">
+
+            <input class="form-control" type="date" placeholder="fecha de pago">
+
+
+        </div>
+    </div>
+    <br>
+    <div class="form-group row">
+        <label class="col-3 col-form-label">Estado</label>
+        <div class="col">
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-outline-success" type="button"><i class="fas fa-thumbs-up"></i> Poliza al
+                    dia</button>
+                <button class="btn btn-outline-danger" type="button"><i class="fal fa-comment-alt-exclamation"></i>
+                    Pendiente de
+                    pago</button>
+
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div class="form-group row">
+        <div class="col">
+            <button type="submit" class="btn btn-primary"> <i class="fa fa-save"></i> Guardar</button>
+
+        </div>
+
+    </div>
+
+</form>
